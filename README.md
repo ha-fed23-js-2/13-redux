@@ -1,8 +1,13 @@
-# React + Vite
+# Redux demo
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A static frontend app using Redux.
 
-Currently, two official plugins are available:
+Type the following in a terminal to test the project.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+```
+git clone <repo url>
+cd 13-redux/
+npm install
+code .
+npm run dev
+```
