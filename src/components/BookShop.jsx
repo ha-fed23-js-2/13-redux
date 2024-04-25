@@ -1,7 +1,9 @@
-import { useSelector } from 'react-redux'
+import { useSelector, useDispatch } from 'react-redux'
+import { actions } from '../features/books.js'
 
 const BookShop = () => {
 	const books = useSelector(state => state.books)
+	const dispatch = useDispatch()
 
 	return (
 		<section className="book-shop">
@@ -11,6 +13,7 @@ const BookShop = () => {
 				{books.map(book => (
 					<div key={book.id} className="book-list-item">
 						{book.title} by {book.author} ... ${book.price}
+						<button onClick={() => dispatch(actions.deleteBook(book.id))}> Delete </button>
 					</div>
 				))}
 

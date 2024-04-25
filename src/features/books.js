@@ -14,7 +14,11 @@ const initialState = defaultBooks
 
 const reducer = createReducer(initialState, builder => {
 	builder
-		.addCase(deleteBook, (state, action) => state.filter(book => book.id !== action.payload))
+		// .addCase(deleteBook, (state, action) => state.filter(book => book.id !== action.payload))
+		.addCase(deleteBook, (state, action) => {
+			console.log('Man kan alltid använda console.log');
+			return state.filter(book => book.id !== action.payload)
+		})
 })
 
 export { actions, reducer }
