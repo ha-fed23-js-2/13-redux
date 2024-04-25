@@ -1,5 +1,6 @@
 // import { useState } from 'react'
 import './App.css'
+import BookShop from './components/BookShop.jsx'
 import Counter from './components/Counter.jsx'
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
 			</header>
 			<main>
 				<Counter />
+				<BookShop />
 			</main>
 		</div>
 	)
